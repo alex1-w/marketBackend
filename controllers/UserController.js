@@ -1,7 +1,7 @@
 const { User } = require('../models/index')
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const cookie = require("js-cookie");
+const cookie = require("js-cookie");    
 
 const UserController = {
 
