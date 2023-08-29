@@ -1,0 +1,20 @@
+{
+  "name": "backads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "js-cookie": "^3.0.5",
+    "jsonwebtoken": "^9.0.1",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.0",
+    "sqlite3": "^5.1.6"
+  }
+}
