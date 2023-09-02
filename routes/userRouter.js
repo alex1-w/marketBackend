@@ -4,5 +4,6 @@ const router = Router()
 
 router.post('/registration', UserController.registration)
 router.post('/authentication', UserController.authentication)
+router.get('/user-info', UserController.getUserInfo)
 
 module.exports = router

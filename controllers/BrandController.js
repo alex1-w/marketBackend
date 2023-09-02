@@ -1,6 +1,12 @@
 const { ProductBrand } = require('../models/index')
 
 const BrandController = {
+    async getBrand(req, res) {
+        const brands = await ProductBrand.findAll()
+        console.log(brands);
+        return res.status(200).json(brands)
+    },
+    
     async createBrand(req, res) {
 
         const brand = req.body.name
@@ -16,10 +22,6 @@ const BrandController = {
 
         }
     },
-    async getBrand(req, res) {
-        const brands = ProductBrand.findAll()
-        return res.status(200).json(brands)
-    }
 }
 
 module.exports = BrandController
